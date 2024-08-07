@@ -1,3 +1,11 @@
+# # Ask user to enter title and notes.
+# # After that, ask user to save/cancel.
+
+# # If user want to save, write data into file
+# # Try to open to saved file.
+# # If we got File not found error, catch the error with Ruby exception and rescue block and 
+# # print "file not found on the screen"
+# # Else, print "file data"
 
 puts "Enter Title: "
 title = gets.chomp
