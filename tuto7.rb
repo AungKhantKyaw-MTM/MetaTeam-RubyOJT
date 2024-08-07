@@ -13,10 +13,9 @@ end
 
 def clock
     begin
-        puts "Enter Hour: "
-        hour = gets.chomp.to_i
-        puts "Enter Minute: "
-        minute = gets.chomp.to_i
+        puts "Enter Hour & Minute (eg: 9:30): "
+        hour_minute = gets.chomp
+        hour, minute = hour_minute.split(":").map(&:to_i)
 
         if !(1..12).include?(hour) || !(0..59).include?(minute)
             puts "Invalid Input! Hour should be between 1-12 & minute should be between 0-59!"
