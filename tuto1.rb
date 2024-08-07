@@ -1,3 +1,6 @@
+
+# Print out diamong using loop
+
 def diamond(height)
     i = 1
     while i <= height

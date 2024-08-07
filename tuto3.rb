@@ -1,3 +1,13 @@
+
+# Ask user to enter first number.
+# Ask user to choose the operator. (+,-,*,/).
+# Ask user to enter second number.
+# Print the result. Ask user decision to (stop or continue)
+# If user choose continue, repeat the process.
+# If user choose stop, stop the process.
+
+
+
 def calculate
     puts "Enter First Number: "
     first_number = gets.chomp.to_f

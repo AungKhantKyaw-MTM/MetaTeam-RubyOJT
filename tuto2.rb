@@ -1,3 +1,12 @@
+
+# Calculate age by user input date.
+
+# Ask user for their birthday.
+# Calculate their age according to the birthdate.
+# Print Child for age younger than 19. Print(18, child).
+# Print Adult otherwise. Print(19, Adult).
+
+
 require 'date'
 
 def calculate_age(date_of_birth)
