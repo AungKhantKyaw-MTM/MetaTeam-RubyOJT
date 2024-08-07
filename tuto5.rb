@@ -5,14 +5,12 @@
 require "date"
 
 today = Date.today
-
-if today.wednesday?
-    days = []
-    1.upto(5) do |i|
-        back_day = today - i
-        days << back_day.strftime("%a")
-    end
-    puts days.join(", ")
-else
-    puts "Today is not Wednesday"
+days = []
+1.upto(5) do |i|
+    back_day = today - i
+    days << back_day.strftime("%a")
 end
+
+today_date = today.strftime("%a")
+
+puts ("Current Day is #{today_date}.\nLast 5 days are #{days.join(", ")}")
